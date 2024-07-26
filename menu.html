@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylemenu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+        </style>
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="searchInput" placeholder="Пошук...">
+    
+    <div class="addb"><button id="addCardButton">Додати картку</button> <select id="sortPrice">
+      <option value="none">Sort by price</option>
+      <option value="asc">Low to High</option>
+      <option value="desc">High to Low</option>
+    </select></div>
+  
+  
+    <div class="pagination" id="pagination"></div>
+  <div class="items" id="items"></div>
+
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <input type="text" id="editText" placeholder="Card text">
+      <input type="text" id="editImage" placeholder="Image URL">
+      <input type="text" id="editDescription" placeholder="Description">
+      <input type="text" id="editWeight" placeholder="Weight">
+      <input type="text" id="editPrice" placeholder="Price">
+      <input type="text" id="editTags" placeholder="Tags (comma-separated)">
+      <button id="saveButton">Save</button>
+    </div>
+  </div>
+
+  <div id="addCardModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <input type="text" id="newCardText" placeholder="Card text">
+      <input type="text" id="newCardImage" placeholder="Image URL">
+      <input type="text" id="newCardDescription" placeholder="Description">
+      <input type="text" id="newCardWeight" placeholder="Weight">
+      <input type="text" id="newCardPrice" placeholder="Price">
+      <input type="text" id="newCardTags" placeholder="Tags (comma-separated)">
+      <button id="addCardSaveButton">Add</button>
+    </div>
+  </div>
+
+    <footer>
+      <h3 class="footert">"Cheese Dream: Your cozy spot on Maidan Nezalezhnosti, Kyiv, where cheese lovers find delight in unique dishes and local flavors. Join us for workshops, tastings, and a taste of local charm."</h3>
+        <div class="info">
+            <div>
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 5 11.54 6.58 13.42c.28.33.72.33 1 0C14 20.54 19 14.25 19 9c0-3.87-3.13-7-7-7m0 9.5c-1.37 0-2.5-1.13-2.5-2.5s1.13-2.5 2.5-2.5s2.5 1.13 2.5 2.5s-1.13 2.5-2.5 2.5z"/>
+                </svg>
+                <span>Київ, м-н. Незалежності, 1</span>
+            </div>
+            <div>
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8zm1-13h-2v6l5.25 3.15l1-1.6l-4.25-2.55V7z"/>
+                </svg>
+                <span>Пн-Пт 11:00 — 22:00</span>
+            </div>
+            <div>
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8zm1-13h-2v6l5.25 3.15l1-1.6l-4.25-2.55V7z"/>
+                </svg>
+                <span>Сб-Нд 11:00 — 21:00</span>
+            </div>
+            <div>
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.58c-.36-.12-.77-.03-1.04.24l-2.2 2.2c-2.89-1.42-5.2-3.73-6.62-6.62l2.2-2.2c.28-.28.36-.69.24-1.04C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1c0 8.28 6.72 15 15 15c.55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/>
+                </svg>
+                <span>+380 63 52 37 919</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scriptmenu.js"></script>
+</body>
+</html>
